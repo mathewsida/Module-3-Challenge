@@ -13,10 +13,7 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var blankUpper = [];
 
 
-var toUpper = function (x) {
-  return x.toUpperCase();
-};
-upperCase = lowerCase.map(toUpper);
+
 
 
 
@@ -173,7 +170,7 @@ function generatePassword() {
 
   var password = passwordBlank.join("");
   console.log("Your Pasword is: " + password);
-  prompt ("Your password is: " + password)
+  alert ("Your password is: " + password)
   return password;
   
 }
