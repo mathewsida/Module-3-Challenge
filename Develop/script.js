@@ -53,13 +53,13 @@ function generatePassword() {
   
   else 
   { 
-    lower = confirm("Will your password contain lower case letters?");
+    lower = confirm("Will your password contain lower case letters? Press 'OK' for Yes and 'Cancel' for No");
     console.log("Lower case " + lowerCase);
-    uppercasecheck = confirm("Will your password contain upper case letters?");
+    uppercasecheck = confirm("Will your password contain upper case letters? Press 'OK' for Yes and 'Cancel' for No");
     console.log("Upper case " + uppercasecheck);
-    numcheck = confirm("Will your password contain numbers?");
+    numcheck = confirm("Will your password contain numbers? Press 'OK' for Yes and 'Cancel' for No");
     console.log("Number " + numcheck);
-    confirmSpecial = confirm("Will your password contain special characters?");
+    confirmSpecial = confirm("Will your password contain special characters? Press 'OK' for Yes and 'Cancel' for No");
     console.log("Special Character " + confirmSpecial);
 
   };
@@ -173,6 +173,7 @@ function generatePassword() {
 
   var password = passwordBlank.join("");
   console.log("Your Pasword is: " + password);
+  prompt ("Your password is: " + password)
   return password;
   
 }
